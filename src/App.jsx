@@ -309,7 +309,7 @@ export default function App() {
           }}
         >
           <img
-            src="/5.png"
+            src={`${import.meta.env.BASE_URL}5.png`}
             alt="left"
             style={{
               maxWidth: "100%",
@@ -338,7 +338,7 @@ export default function App() {
           }}
         >
           <img
-            src={`/${pet}.png`}
+            src={`${import.meta.env.BASE_URL}${pet}.png`}
             alt="bg"
             style={{
               position: "absolute",
@@ -403,7 +403,11 @@ export default function App() {
             }}
             onClick={changePet}
           >
-            <img src="/paw-icon.svg" style={{ minWidth: 35 }} alt="change" />
+            <img
+              src={`${import.meta.env.BASE_URL}paw-icon.svg`}
+              style={{ minWidth: 35 }}
+              alt="change"
+            />
           </button>
 
           <button
@@ -416,7 +420,11 @@ export default function App() {
             }}
             onClick={handleSave}
           >
-            <img src="/save-icon.svg" style={{ minWidth: 35 }} alt="save" />
+            <img
+              src={`${import.meta.env.BASE_URL}save-icon.svg`}
+              style={{ minWidth: 35 }}
+              alt="save"
+            />
           </button>
 
           <div
